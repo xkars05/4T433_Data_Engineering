@@ -75,7 +75,7 @@ GitHub je platforma pro sdílení a správu souborů. Funguje jako sdílená slo
 - **automaticky přiřadí** vlastníky té složky jako reviewery (nemusíš je hledat ručně),
 - a pokud je zapnutá ochrana větve, **nepustí merge**, dokud změny neschválí aspoň jeden z vlastníků.
 
-Díky tomu se nestane, že by někdo změnil Data Contract, aniž by se na to podíval člověk, který za něj zodpovídá.
+Díky tomu se nestane, že by někdo změnil soubor, aniž by se na to podíval člověk, který za něj zodpovídá.
 
 > ⚠️ Samotný soubor CODEOWNERS reviewery jen **přiřazuje**. Aby bylo schválení **povinné**, musí se zapnout ještě ochrana větve `main` (viz Krok 3).
 
@@ -105,9 +105,6 @@ Do CODEOWNERS se píší **GitHub uživatelská jména** se zavináčem, např. 
 # Výchozí pravidlo pro celý repozitář — schvaluje kdokoli z týmu
 *                   @jan-novak @eva-svobodova @petr-dvorak @lucie-kralova
 
-# Data Contracty
-/contracts/         @eva-svobodova @petr-dvorak
-
 # Položky synchronizované z Fabric workspace
 /fabric/            @jan-novak @lucie-kralova
 
@@ -116,13 +113,6 @@ Do CODEOWNERS se píší **GitHub uživatelská jména** se zavináčem, např. 
 ```
 
 ### Jak pravidla číst
-
-| Zápis | Význam |
-|---|---|
-| `*` | Všechny soubory v repozitáři |
-| `/contracts/` | Vše ve složce `contracts` v kořeni repozitáře |
-| `*.yaml` | Všechny soubory s příponou `.yaml` kdekoli |
-| `/contracts/klient.yaml` | Jeden konkrétní soubor |
 
 > ⚠️ **Platí poslední odpovídající řádek.** Když soubor odpovídá více pravidlům, použije se to, které je v souboru **níž**. Proto dávej obecné pravidlo `*` vždy **nahoru** a konkrétní složky pod něj.
 
@@ -140,7 +130,7 @@ Do CODEOWNERS se píší **GitHub uživatelská jména** se zavináčem, např. 
    - ✅ **"Do not allow bypassing the above settings"** (pravidla pak platí i pro správce)
 6. Dole klikni **"Create"**
 
-> ℹ️ Pokud je repozitář **privátní** a GitHub ti ochranu větve nedovolí uložit, potřebuješ účet GitHub Pro. Studenti ho mají zdarma přes [GitHub Education](https://education.github.com/) (Student Developer Pack). Druhou možností je nechat repozitář veřejný — jen pokud to vyučující povolí.
+> ℹ️ Pokud je repozitář **privátní** a GitHub ti ochranu větve nedovolí uložit, potřebuješ účet GitHub Pro. Studenti ho mají zdarma přes [GitHub Education](https://education.github.com/) (Student Developer Pack). Druhou možností je nechat repozitář veřejný.
 
 ### Krok 4 — Ověř, že to funguje
 1. Otevři soubor `.github/CODEOWNERS` v repozitáři
@@ -157,7 +147,7 @@ Microsoft Fabric umí ukládat obsah workspace (notebooky, lakehouse, semantic m
 
 - máte **historii všech změn** i ve Fabricu — kdo co změnil a kdy,
 - můžete se vrátit ke starší verzi,
-- změny ve Fabricu procházejí **stejným schvalováním přes Pull Request** jako Data Contracty.
+- změny ve Fabricu procházejí **schvalováním přes Pull Request**.
 
 ### Jak to funguje v praxi
 
@@ -272,7 +262,7 @@ Pokud nahráváš nový soubor:
 5. Klikni **"Commit changes"**
 
 ### Krok 4b — Uprav existující soubor
-Pokud upravuješ existující Data Contract:
+Pokud upravuješ existující soubor:
 1. Klikni na soubor
 2. Klikni na **ikonu tužky** (Edit) vpravo nahoře
 3. Proveď změny
