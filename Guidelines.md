@@ -1,6 +1,6 @@
-# 📘 Návod pro práci s repozitářem `data-contracts`
+# 📘 Návod pro práci s repozitářem
 
-Tento dokument je určen všem členům týmů, kteří budou přispívat do repozitáře s Data Contracty. Přečti si ho celý před tím, než začneš pracovat.
+Tento dokument je určen všem členům týmů. Přečti si ho celý před tím, než začneš pracovat.
 
 ---
 
