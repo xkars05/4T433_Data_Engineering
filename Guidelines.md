@@ -21,9 +21,7 @@ Tento dokument je určen všem členům týmů. Přečti si ho celý před tím,
 
 ## 1. Co je GitHub a jak funguje?
 
-GitHub je platforma pro sdílení a správu souborů (v našem případě Data Contractů). Funguje jako sdílená složka, ale s jedním velkým rozdílem — **každá změna je zaznamenána, kdo ji udělal a kdy**. Nikdy nemůžeš omylem smazat práci někoho jiného, protože vše je verzované.
-
-Náš repozitář se jmenuje **`data-contracts`** a je uložen v GitHub Organization **`bank-data-contracts`**.
+GitHub je platforma pro sdílení a správu souborů. Funguje jako sdílená složka, ale s jedním velkým rozdílem — **každá změna je zaznamenána, kdo ji udělal a kdy**. Nikdy nemůžeš omylem smazat práci někoho jiného, protože vše je verzované.
 
 ---
 
